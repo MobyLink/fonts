@@ -1,0 +1,21 @@
+{
+  "name": "fonts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@timleecoder42.github.com:MobyLink/fonts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cn-font-split": "^7.4.1",
+    "fs-extra": "^11.3.3"
+  }
+}
