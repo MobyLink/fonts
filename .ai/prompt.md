@@ -24,7 +24,7 @@ assets 下的字体文件包括：
 
 处理完成后的使用方法：
 
-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MobyLink/fonts/build/css/fonts.min.css">
+- `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MobyLink/fonts/build/css/fonts.min.css">`
 - fonts.min.css 文件中包含了所有子集化后的字体引用
 - build/css 文件夹内部还包含了各个字体的单独 css 文件，方便按需引用
 - build/fonts 文件夹中包含了所有生成的 woff2 字体文件
