@@ -8,8 +8,9 @@ assets 下的字体文件包括：
 - 品牌
   - Fredoka
     - https://fonts.google.com/specimen/Fredoka
-  - 站酷庆科黄油体 zcoolqingkehuangyouti
+  - 站酷庆科黄油体 ZCOOLQingKeHuangYou
     - https://www.zcool.com.cn/work/ZMTg5MDEyMDQ
+    - 1.0 版本，下载自 https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou
 - 标题
   - 京华老宋体 KingHwaOldSong
     - https://zhuanlan.zhihu.com/p/1915922891633043436

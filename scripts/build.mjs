@@ -9,9 +9,9 @@ const fonts = [
     family: 'Fredoka',
   },
   {
-    name: 'zcoolqingkehuangyouti',
-    src: 'assets/zcoolqingkehuangyouti.ttf',
-    family: 'zcoolqingkehuangyouti',
+    name: 'ZCOOLQingKeHuangYou',
+    src: 'assets/ZCOOLQingKeHuangYou.ttf',
+    family: 'ZCOOLQingKeHuangYou',
   },
   {
     name: 'KingHwaOldSong',

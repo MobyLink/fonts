@@ -29,23 +29,17 @@
 | 字体名 (CSS Font Family) | 用途 | 原始字体 |
 | ------------------------ | ---- | -------- |
 | `Fredoka` | 品牌 | [Fredoka](https://fonts.google.com/specimen/Fredoka) |
-| `zcoolqingkehuangyouti` | 品牌 | [站酷庆科黄油体](https://www.zcool.com.cn/work/ZMTg5MDEyMDQ) |
+| `ZCOOLQingKeHuangYou` | 品牌 | [站酷庆科黄油体](https://www.zcool.com.cn/work/ZMTg5MDEyMDQ)（1.0 版本，下载自 [Google Fonts](https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou)）  |
 | `KingHwaOldSong` | 标题 | [京华老宋体](https://zhuanlan.zhihu.com/p/1915922891633043436) |
 | `Xiaolai` | 正文 | [小赖字体](https://github.com/lxgw/kose-font) |
 
 ### CSS 示例
 
 ```css
-.brand-text {
-  font-family: 'Fredoka', 'zcoolqingkehuangyouti', sans-serif;
-}
-
-.title-text {
-  font-family: 'KingHwaOldSong', serif;
-}
-
-.body-text {
-  font-family: 'Xiaolai', cursive;
+:root {
+  --font-brand: 'Fredoka', 'ZCOOLQingKeHuangYou', sans-serif;
+  --font-heading: 'KingHwaOldSong', serif;
+  --font-base: 'Fredoka', 'Xiaolai', cursive;
 }
 ```
 
