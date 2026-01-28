@@ -33,7 +33,7 @@ const cssDir = path.join(buildDir, 'css');
 await fs.ensureDir(fontsDir);
 await fs.ensureDir(cssDir);
 
-const allCssContent = [];
+const importRules = [];
 
 for (const font of fonts) {
   console.log(`Processing ${font.name}...`);
@@ -91,17 +91,15 @@ for (const font of fonts) {
     // Save individual CSS
     await fs.outputFile(path.join(cssDir, `${font.name}.css`), cssContent);
 
-    // Add to main CSS content
-    allCssContent.push(`/* ${font.name} */`);
-    allCssContent.push(cssContent);
+    // Add import rule
+    importRules.push(`@import url('${font.name}.css');`);
   } else {
     console.error(`Warning: No CSS generated for ${font.name}`);
   }
 }
 
-// Write combined minified (concatenated) CSS
-// For real minification we'd use a tool, but for now simple concat is okay or we can strip whitespace.
-const finalCss = allCssContent.join('\n');
+// Write combined css with imports
+const finalCss = importRules.join('\n');
 await fs.outputFile(path.join(cssDir, 'fonts.min.css'), finalCss);
 
 console.log('Build complete!');
