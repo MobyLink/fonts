@@ -67,14 +67,14 @@ node scripts/build.mjs
 
 ## 技术栈
 
-- [cn-font-split](https://github.com/KonghaYao/cn-font-split): 纯 JS 实现的字体子集化工具，支持 woff2 格式输出。
+- [cn-font-split](https://github.com/KonghaYao/cn-font-split): 字体子集化工具，支持 woff2 格式输出。
 
 ## 版权说明
 
 本仓库仅提供字体子集化处理，字体版权归原作者所有。
 
-- **Fredoka**: SIL Open Font License
-- **站酷庆科黄油体**: 站酷公益字体 (ZCOOL)
+- **Fredoka**: SIL Open Font License 1.1
+- **站酷庆科黄油体**: SIL Open Font License 1.1
 - **京华老宋体**: 免费商用 (KingHwaOldSong)
 - **小赖字体**: SIL Open Font License 1.1
 
