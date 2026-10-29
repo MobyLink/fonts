@@ -28,20 +28,29 @@
 
 | 字体名 (CSS Font Family) | 用途 | 原始字体 |
 | ------------------------ | ---- | -------- |
-| `Fredoka` | 品牌 | [Fredoka](https://fonts.google.com/specimen/Fredoka) |
-| `ZCOOLQingKeHuangYou` | 品牌 | [站酷庆科黄油体](https://www.zcool.com.cn/work/ZMTg5MDEyMDQ)（1.0 版本，下载自 [Google Fonts](https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou)）  |
-| `KingHwaOldSong` | 标题 | [京华老宋体](https://zhuanlan.zhihu.com/p/1915922891633043436) |
-| `Xiaolai` | 正文 | [小赖字体](https://github.com/lxgw/kose-font) |
+| `Fredoka` | 品牌（西文与数字）、手写体（西文） | [Fredoka](https://fonts.google.com/specimen/Fredoka) |
+| `ZCOOLQingKeHuangYou` | 品牌（中文） | [站酷庆科黄油体](https://www.zcool.com.cn/work/ZMTg5MDEyMDQ)（1.0 版本，下载自 [Google Fonts](https://fonts.google.com/specimen/ZCOOL+QingKe+HuangYou)）  |
+| `KingHwaOldSong` | 宋体（需要宋体显示的地方，只有 400，不加粗） | [京华老宋体](https://zhuanlan.zhihu.com/p/1915922891633043436) |
+| `Xiaolai` | 手写体（中文，只有 400，不加粗） | [小赖字体](https://github.com/lxgw/kose-font) |
 
 ### CSS 示例
 
+字体族的命名与组合和设计系统（`MobyLink/design` 的 `system/tokens/typography.json`）保持一致：
+
 ```css
 :root {
-  --font-brand: 'Fredoka', 'ZCOOLQingKeHuangYou', sans-serif;
-  --font-heading: 'KingHwaOldSong', serif;
-  --font-base: 'Fredoka', 'Xiaolai', cursive;
+  --font-brand: Fredoka, ZCOOLQingKeHuangYou, sans-serif;
+  --font-heading: KingHwaOldSong, serif;
+  --font-cursive: Fredoka, Xiaolai, cursive;
+  --font-mono: monospace;
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
 }
 ```
+
+- `brand`：品牌字体，用于字标等品牌场景。
+- `heading`：宋体，用于需要宋体显示的地方，不限定具体场景。
+- `cursive`：手写体，用于适合手写感的地方，不限定具体场景。
+- `mono`、`sans`：系统字体，本仓库不提供字体文件。
 
 ## 开发与构建
 
